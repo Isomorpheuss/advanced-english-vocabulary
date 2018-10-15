@@ -128,7 +128,7 @@ def write_out_list(stuff, filename):
 
 
 def write_out_csv(stuff, filename):
-    with open(filename, 'w', encoding='utf-8') as csvfile:
+    with open(filename, 'w', encoding='utf-8', newline='') as csvfile:
         mywriter = csv.writer(csvfile, delimiter='\t')
         mywriter.writerows(stuff)
 
